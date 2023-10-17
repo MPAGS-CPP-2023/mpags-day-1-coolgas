@@ -4,4 +4,4 @@ FROM mcr.microsoft.com/devcontainers/cpp:1-${VARIANT}
 
 # [Optional] Uncomment this section to install additional packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install --no-install-recommends doxygen graphviz tree clang-format
+     && apt-get -y install --no-install-recommends doxygen graphviz tree clang-format libboost-all-dev
